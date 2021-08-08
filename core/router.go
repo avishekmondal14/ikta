@@ -17,7 +17,7 @@ func NewRouter(server *server.Server) *router.Router {
 
 	loginRouter := rootRouter.NewSubrouter(``)
 	loginRouter.SetHandler(`\/adminlogin`, "POST", handlers.AdminLogin)
-	loginRouter.SetHandler(`\/adminlogin`, "POST", handlers.TeacherLogin)
+	loginRouter.SetHandler(`\/teacherlogin`, "POST", handlers.TeacherLogin)
 
 	return rootRouter
 }
