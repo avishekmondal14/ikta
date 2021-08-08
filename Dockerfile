@@ -9,8 +9,10 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /docker-ikta
+# RUN go build -o /docker-ikta
 
 EXPOSE 3000
 
-CMD [ "/docker-ikta" ]
+# CMD [ "/docker-ikta" ]
+
+CMD ["go","run","main.go"]
