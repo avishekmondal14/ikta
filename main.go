@@ -1,6 +1,7 @@
 package main
 
 import (
+	// "fmt"
 	"errors"
 	"log"
 	"net/http"
@@ -23,4 +24,6 @@ func main() {
 	}()
 
 	core.ShutdownServer(server)
+
+	// fmt.Println("inside main fn")
 }
